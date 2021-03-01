@@ -1,0 +1,1 @@
+<view><view class="user"><image src="../../static/img/user_bg.jpg" mode></image><view data-event-opts="{{[['tap',[['phone']]]]}}" bindtap="__e">联系电话：400-000-0000（点击拨打）</view><view>通信地址：西安市新城区南大街1号</view></view><map class="map" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" markers="{{markers}}"></map></view>

@@ -1,0 +1,13 @@
+.user image {
+  width: 750rpx;
+  height: 200px;
+}
+.user view {
+  padding: 30rpx 10rpx 0;
+}
+.map {
+  width: 750rpx;
+  height: 190px;
+  margin: 30px 0;
+}
+

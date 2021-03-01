@@ -1,0 +1,27 @@
+.cate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.cate .left {
+  width: 280rpx;
+  height: 600px;
+  text-align: center;
+  background: #f9f9f9;
+}
+.cate .left .cate_item {
+  height: 60px;
+  line-height: 60px;
+}
+.cate .left .active {
+  background: pink;
+}
+.cate .right {
+  width: 470rpx;
+  height: 600px;
+}
+.cate .right .item {
+  margin-bottom: 10px;
+  text-align: center;
+}
+

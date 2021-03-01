@@ -1,0 +1,33 @@
+.detail {
+  padding: 0 20rpx;
+}
+.detail .info image {
+  width: 100%;
+}
+.detail .info .name {
+  font-size: 20px;
+}
+.detail .info .desc {
+  margin: 20px 0;
+  color: #666;
+}
+.detail .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.detail .list .item {
+  width: 350rpx;
+}
+.detail .list .item image {
+  width: 100%;
+}
+.detail .list .item .name {
+  text-align: center;
+}
+

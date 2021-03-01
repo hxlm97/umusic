@@ -1,0 +1,39 @@
+.playlist {
+  width: 100%;
+  padding: 0 15rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.playlist .playlist_item {
+  width: 49%;
+  padding-bottom: 15rpx;
+}
+.playlist .playlist_item image {
+  width: 100%;
+}
+
+.home swiper {
+  width: 750rpx;
+  height: 380rpx;
+}
+.home swiper image {
+  width: 100%;
+  height: 100%;
+}
+.recommend .tit {
+  margin: 10px 0;
+  padding: 10px 0 ;
+  text-align: center;
+  border-bottom: 1px solid #ffafc9;
+}
+.recommend .tit text {
+  font-size: 34rpx;
+  letter-spacing: 20px;
+}
+
