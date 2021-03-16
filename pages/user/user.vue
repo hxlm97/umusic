@@ -1,11 +1,23 @@
 <template>
-	<view>
-		<view class="user">
-			<image src="../../static/img/user_bg.jpg" mode=""></image>
-			<view @click="phone()">联系电话：400-000-0000（点击拨打）</view>
-			<view>通信地址：西安市新城区南大街1号</view>
+	<view class="user">
+		<text class="tit">欢迎来到umusic</text>
+		<view class="login-box">
+			<view class="avatar">
+				<image src="/static/img/default_avatar.jpg" mode=""></image>
+			</view>
+			<view class="uni-form-item uni-column">
+				<input type="text" value="" 
+				placeholder="请输入手机号码"
+				v-model="phone"/>
+			</view>
+			<view class="uni-form-item uni-column verify">
+				<input type="text" value="" 
+				placeholder="请输入验证码"
+				v-model="captcha"/>
+				<button type="default" style="border: 0;">获取验证码</button>
+			</view>
 		</view>
-		<map class="map" :latitude="latitude" :longitude="longitude" :scale="scale" :markers="markers"></map>
+		<view class="login">登录</view>
 	</view>
 </template>
 
@@ -13,44 +25,67 @@
 	export default {
 		data() {
 			return {
-				longitude: 108.95346,
-				latitude: 34.265725,
-				scale: 16,
-				markers: [
-					{
-						longitude: 108.95346,
-						latitude: 34.265725,
-						iconPath: '../../static/img/logo.png',
-						width: 30,
-						height: 30
-						
-					}
-				]
+				phone: '',
+				captcha: ''
 			}
 		},
 		methods: {
-			phone() {
-				uni.makePhoneCall({
-					phoneNumber: '400-000-0000'
-				})
-			}
 		}
 	}
 </script>
 
 <style lang="less">
 	.user {
-		image {
+		padding: 10px;
+		.tit {
+			display: inline-block;
 			width: 750rpx;
-			height: 200px;
+			font-size: 22px;
+			text-align: center;
 		}
-		view {
-			padding: 30rpx 10rpx 0;
+		.login-box {
+			margin-top: 10px;
+			padding: 20px;
+			// height: 200px;
+			// background: pink;
+			.avatar {
+				text-align: center;
+				image {
+					width: 60px;
+					height: 60px;
+					margin-bottom: 10px;
+				}
+			}
+			input {
+				// background: lightblue;
+				height: 50px;
+				border-bottom: 1px solid #f9f9f9;
+			}
+			.verify {
+				position: relative;
+			}
+			button {
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 16px;
+				width: 120px;
+				height: 50px;
+				line-height: 50px;
+				background: lightblue;
+			}
+			button:after {
+				border: 0!important;
+			}
 		}
-	}
-	.map {
-		width: 750rpx;
-		height: 190px;
-		margin: 30px 0;
+		.login {
+			margin-top: 20px;
+			text-align: center;
+			color: #fff;
+			height: 40px;
+			line-height: 40px;
+			background: lightblue;
+			border-radius: 20px;
+		}
 	}
 </style>

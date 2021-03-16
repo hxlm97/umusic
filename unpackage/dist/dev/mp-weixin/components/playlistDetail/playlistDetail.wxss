@@ -1,33 +1,94 @@
-.detail {
-  padding: 0 20rpx;
+.detail .info {
+  height: 240px;
+  color: #fff;
 }
-.detail .info image {
-  width: 100%;
+.detail .info .info-bg {
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
-.detail .info .name {
-  font-size: 20px;
+.detail .info .info-m {
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }
-.detail .info .desc {
-  margin: 20px 0;
-  color: #666;
-}
-.detail .list {
+.detail .info .info-m .tit {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+}
+.detail .info .info-m .tit .tit-l {
+  margin-right: 20px;
+}
+.detail .info .info-m .tit .tit-l image {
+  width: 240rpx;
+  height: 240rpx;
+}
+.detail .info .info-m .tit .tit-r {
+  width: 200px;
+}
+.detail .info .info-m .tit .tit-r .name {
+  font-size: 18px;
+}
+.detail .info .info-m .tit .tit-r .desc {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #f8f8f8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail .info .info-m .name {
+  font-size: 20px;
+}
+.detail .info .info-m .btn {
+  margin: 10px 0;
+}
+.detail .info .info-m .btn .btn-m,
+.detail .info .info-m .btn .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  text-align: center;
+}
+.detail .info .info-m .btn image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.detail .list {
+  padding: 20rpx;
+  background: #fdfdfd;
+}
+.detail .list .active {
+  color: pink;
+}
+.detail .list .active .songinfo {
+  color: pink!important;
 }
 .detail .list .item {
-  width: 350rpx;
+  height: 70px;
+  line-height: 28px;
 }
-.detail .list .item image {
-  width: 100%;
+.detail .list .item .songinfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #666;
 }
-.detail .list .item .name {
-  text-align: center;
+.detail .list .item .songinfo .songers {
+  height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail .list .item .songinfo .album {
+  height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 

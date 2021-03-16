@@ -1,7 +1,7 @@
 <template>
 	<view class="home">
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
-			<swiper-item v-for="item in swiper" :key="item.targetId">
+			<swiper-item v-for="item in swiper" :key="item.id">
 				<image :src="item.imageUrl" mode=""></image>
 			</swiper-item>
 		</swiper>
@@ -35,7 +35,7 @@
 					url: '/banner'
 				})
 				
-						// console.log(res);
+				// console.log(res);
 				this.swiper = res.data.banners
 				
 			},
@@ -54,12 +54,14 @@
 				// })
 			},
 			// 跳转到歌单详情页
-			playlistDetail(item) {
+			playlistDetail(id) {
 				uni.navigateTo({
-					url: '../../components/playlistDetail/playlistDetail?id=' + item.id
+					url: '../../components/playlistDetail/playlistDetail?id=' + id
 				});
-				console.log('tiaozhuan')
-			}
+				console.log('dj')
+				// console.log(id)
+			},
+			
 		}
 	}
 </script>

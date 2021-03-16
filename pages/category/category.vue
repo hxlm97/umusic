@@ -10,7 +10,8 @@
 		</scroll-view>
 		
 		<scroll-view scroll-y="true" class="right">
-			<view class="item" v-for="item in catePlaylist">
+			<view class="item" v-for="item in songlist"
+			@click="itemClick(item)">
 				<image :src="item.al.picUrl"></image>
 				<text>{{item.al.name}}</text>
 			</view>
@@ -23,8 +24,8 @@
 		data() {
 			return {
 				cate: [],
-				catePlaylist: [],
-				active: 0
+				songlist: [],
+				active: 0,
 			}
 		},
 		onLoad() {
@@ -46,8 +47,16 @@
 					url: '/playlist/detail?id=' + item.id
 				})
 				
-				this.catePlaylist = res.data.playlist.tracks
-			}
+				this.songlist = res.data.playlist.tracks
+			},
+			
+			// 跳转到单曲详情页
+			itemClick(item) {
+				uni.navigateTo({
+					url: '../../components/songDetail/songDetail?id=' + item.id
+				});
+				console.log('tiaozhuan')
+			},
 		}
 	}
 </script>

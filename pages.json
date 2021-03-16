@@ -24,10 +24,10 @@
             
         }
         ,{
-            "path" : "components/song-list/song-list",
+            "path" : "components/songDetail/songDetail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "单 曲",
                 "enablePullDownRefresh": false
             }
             
@@ -42,19 +42,19 @@
             
         }
         ,{
-            "path" : "components/playlist/playlist",
+            "path" : "components/playlistDetail/playlistDetail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "歌 单",
                 "enablePullDownRefresh": false
             }
             
         }
         ,{
-            "path" : "components/playlistDetail/playlistDetail",
+            "path" : "components/comment/comment",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "歌 单",
+                "navigationBarTitleText": "评 论",
                 "enablePullDownRefresh": false
             }
             

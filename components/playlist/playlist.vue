@@ -2,8 +2,8 @@
 	<view>
 		<view class="playlist">
 			<view class="playlist_item"
-			 v-for="item in playlist" :key="item.id"
-			 @click="navigator(item)">
+			 v-for="item in playlist" :key="item.index"
+			 @click="navigator(item.id)">
 				<image :src="item.picUrl" mode=""></image>
 				<text>{{item.name}}</text>
 			</view>
@@ -20,8 +20,9 @@
 			}
 		},
 		methods: {
-			navigator(item) {
-				this.$emit('playlistItemClick', item)
+			navigator(id) {
+				this.$emit('playlistItemClick', id)
+				console.log('dj')
 			}
 		}
 	}

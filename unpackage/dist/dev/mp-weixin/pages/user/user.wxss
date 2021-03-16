@@ -1,13 +1,52 @@
-.user image {
-  width: 750rpx;
-  height: 200px;
+.user {
+  padding: 10px;
 }
-.user view {
-  padding: 30rpx 10rpx 0;
-}
-.map {
+.user .tit {
+  display: inline-block;
   width: 750rpx;
-  height: 190px;
-  margin: 30px 0;
+  font-size: 22px;
+  text-align: center;
+}
+.user .login-box {
+  margin-top: 10px;
+  padding: 20px;
+  background: pink;
+}
+.user .login-box .avatar {
+  text-align: center;
+}
+.user .login-box .avatar image {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.user .login-box input {
+  height: 50px;
+  border-bottom: 1px solid #f9f9f9;
+}
+.user .login-box .verify {
+  position: relative;
+}
+.user .login-box button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  background: pink;
+}
+.user .login-box button:after {
+  border: 0!important;
+}
+.user .login {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  background: lightblue;
+  border-radius: 20px;
 }
 

@@ -3,10 +3,10 @@
     "pages/index/index",
     "pages/category/category",
     "pages/user/user",
-    "components/song-list/song-list",
+    "components/songDetail/songDetail",
     "pages/cate-detail/cate-detail",
-    "components/playlist/playlist",
-    "components/playlistDetail/playlistDetail"
+    "components/playlistDetail/playlistDetail",
+    "components/comment/comment"
   ],
   "subPackages": [],
   "window": {
@@ -39,5 +39,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
